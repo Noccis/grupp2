@@ -2,6 +2,7 @@ using GRUPP2.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using Grupp2.Models;
 
 namespace GRUPP2.Services;
 
