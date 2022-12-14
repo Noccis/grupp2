@@ -7,6 +7,7 @@ namespace Grupp2.Models;
 
 public class Routes
 {
+#pragma warning disable CS1591
 
     [BsonRepresentation(BsonType.ObjectId)]
     [BsonId]
@@ -16,7 +17,7 @@ public class Routes
     [JsonPropertyName("airline")]
     public Airline Airline { get; set; } = null!;
 
-#pragma warning disable CS1591
+
 
     [BsonElement("src_airport")]
     [JsonPropertyName("src_airport")]
