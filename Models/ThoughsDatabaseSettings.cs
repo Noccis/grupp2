@@ -1,6 +1,5 @@
 namespace Grupp2.Models;
 
-#pragma warning disable CS1591
 public class ThoughtsDatabaseSettings
 {
     public string ConnectionURI { get; set; } = null!;
@@ -9,4 +8,3 @@ public class ThoughtsDatabaseSettings
 
     public string CollectionName { get; set; } = null!;
 }
-#pragma warning restore CS1591

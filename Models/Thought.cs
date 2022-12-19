@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Grupp2.Models;
 
-#pragma warning disable CS1591
 public class Thought 
 {
 
@@ -30,5 +29,3 @@ public List<Comment> Comments { get; set; } = null!;
 [Required]
 public DateTime? Date { get; set; }
 }
-
-#pragma warning restore CS1591

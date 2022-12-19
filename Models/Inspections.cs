@@ -25,7 +25,7 @@ public class Inspections {
     [JsonPropertyName("certificate_number")] 
     public int? CertificateNumber { get; set; } = null!;
 
-     #pragma warning disable CS1591
+    
     [BsonElement("business_name")]
     [JsonPropertyName("business_name")] 
     public string? BusinessName { get; set; } = null!;
@@ -51,5 +51,5 @@ public class Inspections {
     public List<string> TrainingIds { get; set; } = null!;
 
 }
-#pragma warning restore CS1591
+
 
