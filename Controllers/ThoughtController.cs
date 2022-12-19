@@ -68,6 +68,7 @@ public class ThoughtController : ControllerBase{
     /// Updates your Thought with matching Id.
     /// </summary>
     /// <param name="id"></param>
+    /// <param name="updatedThought"></param>
     /// <returns></returns>
     /// <response code="204">Returns the newly created Thought</response>
     /// <response code="400">If some of the fields are null</response>
@@ -117,6 +118,7 @@ public class ThoughtController : ControllerBase{
     /// Adds a comment to a Thought of the matching id.
     /// </summary>
     /// <param name="id"></param>
+    /// <param name="comment"></param>
     /// <returns>Your created comment</returns>
     /// <remarks>
     /// Sample request:
