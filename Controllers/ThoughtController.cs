@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Grupp2.Controllers;
 
-#pragma warning disable CS1591
 [ApiController]
 [Route("api/[controller]")]
 [Produces("application/json")]
@@ -142,5 +141,3 @@ public class ThoughtController : ControllerBase{
     }
 
 }
-
-#pragma warning restore CS1591
