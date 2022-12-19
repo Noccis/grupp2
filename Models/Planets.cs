@@ -5,7 +5,6 @@ using System.Text.Json.Serialization;
 namespace Grupp2.Models;
 
 
-#pragma warning disable CS1591
 public class Planet
 {
 
@@ -26,4 +25,4 @@ public class Planet
     public SurfaceTemperatureC SurfaceTemperatureC { get; set; } = null!;
 
 }
-#pragma warning restore CS1591
+

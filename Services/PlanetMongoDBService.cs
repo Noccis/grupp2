@@ -6,7 +6,6 @@ using MongoDB.Bson;
 
 namespace Grupp2.Services;
 
-#pragma warning disable CS1591
 public class PlanetMongoDBService
 {
 
@@ -49,4 +48,3 @@ public class PlanetMongoDBService
 await _planetsCollection.Find(x => x._Id == id).FirstOrDefaultAsync();
 
 }
-#pragma warning restore CS1591

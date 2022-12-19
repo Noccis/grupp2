@@ -2,7 +2,6 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Grupp2.Models;
 
-#pragma warning disable CS1591
 public class SurfaceTemperatureC
 {
 
@@ -17,4 +16,3 @@ public class SurfaceTemperatureC
     public double? Mean { get; set; }
 
 }
-#pragma warning restore CS1591
