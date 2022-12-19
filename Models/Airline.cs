@@ -5,8 +5,10 @@ using System.Text.Json.Serialization;
 namespace Grupp2.Models;
 
 //[BsonIgnoreExtraElements]
+#pragma warning disable CS1591
 public class Airline
 {
+
     [BsonElement("id")]
     [JsonPropertyName("id")]
     public int ID { get; set; }
@@ -27,4 +29,4 @@ public class Airline
 
 
 }
-#pragma warning disable CS1591
+#pragma warning restore CS1591

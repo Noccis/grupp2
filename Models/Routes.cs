@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace Grupp2.Models;
 
-
+#pragma warning disable CS1591
 public class Routes
 {
 
@@ -16,7 +16,7 @@ public class Routes
     [JsonPropertyName("airline")]
     public Airline Airline { get; set; } = null!;
 
-#pragma warning disable CS1591
+
 
     [BsonElement("src_airport")]
     [JsonPropertyName("src_airport")]

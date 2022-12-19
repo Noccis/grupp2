@@ -5,11 +5,14 @@ using Grupp2.Models;
 
 namespace Grupp2.Controllers;
 
+
+#pragma warning disable CS1591
+
 [Controller]
 [Route("api/[controller]")]
 [Produces("application/json")]
 
-#pragma warning disable CS1591
+
 
 public class RoutesController : Controller
 {
@@ -76,17 +79,6 @@ public class RoutesController : Controller
     }
 
 
-    // /// <summary>
-    // /// Change airplane name.
-    // /// </summary>
-    // [HttpPut("{id}")]
-    // [ProducesResponseType(StatusCodes.Status404NotFound)]
-    // [ProducesResponseType(StatusCodes.Status102Processing)]
-    // public async Task<IActionResult> ChangeAirplaneName(string id, string newairplanename)
-    // {
-    //     await _mongoDBService.ChangeAirplaneNameAsync(id, newairplanename);
-    //     return NoContent();
-    // }
 
     /// <summary>
     /// Delete a route.
@@ -122,3 +114,4 @@ public class RoutesController : Controller
 
 
 }
+#pragma warning restore CS1591
