@@ -4,10 +4,9 @@ using System.Text.Json.Serialization;
 
 namespace Grupp2.Models;
 
-
+#pragma warning disable CS1591
 public class Routes
 {
-#pragma warning disable CS1591
 
     [BsonRepresentation(BsonType.ObjectId)]
     [BsonId]
