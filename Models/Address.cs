@@ -11,7 +11,6 @@ public class Address {
     [BsonElement("city")]
     [JsonPropertyName("city")]
 
-    #pragma warning disable CS1591
     public string? City { get; set; }
 
     [BsonElement("zip")]
@@ -27,4 +26,3 @@ public class Address {
     public int Number { get; set; }
 
 }
-    #pragma warning restore CS1591

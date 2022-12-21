@@ -12,8 +12,6 @@ namespace Grupp2.Controllers;
 [Produces("application/json")]
 
 
-
-#pragma warning disable CS1591
 public class PlanetsController : Controller
 {
 
@@ -96,7 +94,7 @@ public class PlanetsController : Controller
     /// <response code="404">Planet not found</response>
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)] 
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(string id)
     {
         await _planetDBService.DeleteAsync(id);
@@ -111,7 +109,7 @@ public class PlanetsController : Controller
 
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)] 
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<Planet>> Get(string id)
     {
         var planet = await _planetDBService.GetOneById(id);
@@ -124,4 +122,3 @@ public class PlanetsController : Controller
     }
 
 }
-#pragma warning restore CS1591

@@ -3,7 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Grupp2.Models;
 
-#pragma warning disable CS1591
 public class Comment 
 {
     [Required]
@@ -14,4 +13,3 @@ public class Comment
     [Required]
     public string Author { get; set; } = null!;
 }
-#pragma warning restore CS1591

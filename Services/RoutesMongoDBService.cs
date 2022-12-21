@@ -5,6 +5,7 @@ using MongoDB.Bson;
 
 namespace Grupp2.Services;
 
+#pragma warning disable CS1591
 public class RoutesMongoDBService
 {
 
@@ -49,31 +50,8 @@ public class RoutesMongoDBService
     }
 
 
-    //     public async Task UpdateAsync(string id, Routes updatedRoute)
-    //     {
-
-    //          await _routesCollection.ReplaceOneAsync(route => route.Id == id, updatedRoute);
-
-    //           await _routesCollection.ReplaceOneAsync(r => r.Id.Equals(id), 
-    //     updatedRoute, new UpdateOptions { IsUpsert = true });
-
-    //      await _routesCollection.ReplaceOneAsync(r => r.Id.Equals(id)
-    //     , updatedRoute);
-
-    //    await _routesCollection.ReplaceOneAsync(r => r.Id.Equals(id)
-    //     , updatedRoute, new UpdateOptions { IsUpsert = true });
-
-
-    //         await _routesCollection.FindOneAndReplaceAsync(
-    //     Builders<Routes>.Filter.Eq(u => u.Id, id),
-    //     updatedRoute,
-    //     new FindOneAndReplaceOptions<Routes>
-    //     { ReturnDocument = ReturnDocument.After });
-
-
-    //     }
-
     public async Task UpdateAsync(string id, Routes updatedBook) =>
             await _routesCollection.ReplaceOneAsync(x => x.Id == id, updatedBook);
 
 }
+#pragma warning restore CS1591

@@ -14,15 +14,18 @@ public class Restaurant {
     /// Creates an unique id for each restaurant object
     /// </summary>
 
+    //id field is to be represented as an ObjectId in BSON in mongoDB
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? _id { get; set; }
 
-    #pragma warning disable CS1591
+    // has no custom mapping will be borough in JSON and in mongoDB
     public string borough { get; set;} = null!;
 
+    //has no custom mapping will be cuisine in JSON and in mongoDB
     public string cuisine { get; set; } = null!;
 
+    //has no custom mapping just a list of menuItems in mongoDB
     public List<string> menuItems { get; set; } = null!;
 
     /// <summary>
@@ -33,5 +36,3 @@ public class Restaurant {
     public Coordinates Coordinates {get; set;} = null!;
 
 }
-
-#pragma warning disable CS1591

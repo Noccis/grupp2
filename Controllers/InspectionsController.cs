@@ -9,7 +9,6 @@ namespace Grupp2.Controllers;
 [Route("api/[controller]")]
 [Produces("application/json")]
 
-#pragma warning disable CS1591
 public class InspectionsController: Controller {
     
     private readonly InspectionsDBService _inspectionsDBService;
